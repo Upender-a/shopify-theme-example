@@ -1,0 +1,50 @@
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'faq.js' | asset_url }}" defer="defer"></script>
+
+<div class="faqs">
+  {% for block in section.blocks %}
+   <div class="faq">
+    <button class="accordion">{{ block.settings.question }}</button>
+      <div class="panel">
+       <p>{{ block.settings.answer }}</p>
+     </div>
+  </div>
+    {% endfor %}   
+</div>
+
+
+{% schema %}
+{
+  "name": "FAQ",  
+  "settings": [
+    {
+      "type": "text",
+      "id"  :"headline",
+      "label": "Headline"
+    }    
+  ],
+  "blocks": [
+    {
+      "name":"question",
+      "type": "question",      
+     "settings": [
+       {
+      "type": "text",
+      "id"  :"question",
+      "label":  "question"
+       },
+        {
+      "type": "text",
+      "id"  :"answer",
+      "label":  "answer"
+       }
+     ]
+    }
+    ],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}
