@@ -3,6 +3,9 @@
   background-color: #453c3c;
   color: #fff;
 }
+h2 {
+  color:#fff;
+}
 
 .footer:not(.color-scheme-1) {
   border-top: none;
