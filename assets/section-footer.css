@@ -39,8 +39,10 @@
 }
 
 @media screen and (min-width: 750px) {
+   .footer__content-top {
+     display: grid;
+   }
   .footer__content-top .grid {
-    display: grid !important;
     row-gap: 6rem;
     margin-bottom: 0;
   }
