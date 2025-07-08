@@ -139,9 +139,7 @@
 .footer-block--newsletter {
   display: flex;
   align-items: flex-end;
-  margin-top: 2rem;
-  gap: 1rem;
-}
+  }
 
 .footer-block--newsletter:only-child {
   margin-top: 0;
