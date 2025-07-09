@@ -8,7 +8,7 @@
  * ------------------------------------------------------------
  */
 {  
-  "layout":"theme.product",
+ 
   "sections": {
     "main": {
       "type": "main-product",
