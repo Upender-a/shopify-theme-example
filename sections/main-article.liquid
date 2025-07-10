@@ -294,15 +294,7 @@
   "name": "t:sections.main-article.name",
   "tag": "section",
   "class": "section",
-   "settings": [
-        {
-          "type": "checkbox",
-          "id": "enable_checkbox",          
-          "default":true,
-          "label": "Display Author Name"
-        }
-      ],
-  "blocks": [
+   "blocks": [
     {
       "type": "@app"
     },
@@ -374,6 +366,14 @@
         }
       ]
     },    
-  ]  
+  ],
+   "settings":[
+        {
+          "type": "checkbox",
+          "id": "enable_checkbox",
+          "label": "Display Article Author",
+          "default": false
+        }
+      ]
 }
 {% endschema %}
