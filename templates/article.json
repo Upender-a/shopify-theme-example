@@ -34,13 +34,18 @@
         "content": {
           "type": "content",
           "settings": {}
+        },
+        "text": {
+          "type":"text",
+          "settings":{}
         }
-      },
+      },      
       "block_order": [
         "featured_image",
         "title",
         "share",
-        "content"
+        "content",
+        "text"
       ],
       "settings": {}
     }
