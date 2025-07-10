@@ -42,9 +42,7 @@
         "share",
         "content"
       ],
-      "settings": {
-        "enable_checkbox": true
-      }
+      "settings": {}
     }
   },
   "order": [
