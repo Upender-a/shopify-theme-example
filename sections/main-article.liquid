@@ -63,7 +63,11 @@
         </header>
       {%- when 'text' -%}
       <div>
-          {{article.NameAuthor }}
+         {%- if block.settings.blog_show_date -%}
+            <span class="circle-divider caption-with-letter-spacing">
+              {{- article.published_at | time_tag: format: 'date' -}}
+            </span>
+           {% endif %}}
       </div>
     
       {%- when 'content' -%}
