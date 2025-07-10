@@ -63,6 +63,7 @@
         </header>
       {%- when 'text' -%}
       <div>
+        {{ article.NameAuthor }}
       {{ block.settings.author_name }}
          {%- if block.settings.author_name -%}
             <span class="circle-divider caption-with-letter-spacing">
