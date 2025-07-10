@@ -63,6 +63,7 @@
         </header>
       {%- when 'text' -%}
       <div>
+      {{ block.settings.author_name }}
          {%- if block.settings.author_name -%}
             <span class="circle-divider caption-with-letter-spacing">
              Upender
